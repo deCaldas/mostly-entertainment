@@ -1,0 +1,9 @@
+#hero {
+    text-align: center;
+    color: #fff;
+}
+
+.hero-texto {
+    position: relative;
+    transform: translateY(17%);
+}
