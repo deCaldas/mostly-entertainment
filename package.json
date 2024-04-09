@@ -1,8 +1,18 @@
 {
   "name": "mostly-entertainment",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Landing page for independent record label Mostly Entertainment",
-  "keywords": [],
+  "keywords": [
+    "Web Develop",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "UI/UX",
+    "Responsive Web Design",
+    "CMS",
+    "SEO",
+    "GitHub"
+  ],
   "author": "Diego Whiskey",
-  "license": "ISC"
+  "license": "GPL-3.0-only"
 }
