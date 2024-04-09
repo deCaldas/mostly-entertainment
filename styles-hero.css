@@ -5,5 +5,9 @@
 
 .hero-texto {
     position: relative;
-    transform: translateY(17%);
+    transform: translateY(11%);
+}
+
+#hero .hero-texto h2 {
+    padding-top: 173px;
 }
