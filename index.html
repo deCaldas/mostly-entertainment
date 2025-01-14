@@ -1,118 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Record company dedicated to the production, distribution and promotion of rap music">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Record company dedicated to the production, distribution and promotion of rap music"
+    />
     <!-- Open Graph protocol -->
     <meta property="og:title" content="Mostly Entertainment Record Company" />
     <meta property="og:type" content="Homepage" />
-    <meta property="og:url" content="https://decaldas.github.io/mostly-entertainment/" />
-    <meta property="og:image" content="https://github.com/deCaldas/mostly-entertainment/blob/main/img/openGraph-Mostly_Entertainment.png?raw=true/" />
+    <meta
+      property="og:url"
+      content="https://decaldas.github.io/mostly-entertainment/"
+    />
+    <meta
+      property="og:image"
+      content="https://github.com/deCaldas/mostly-entertainment/blob/main/img/openGraph-Mostly_Entertainment.png?raw=true/"
+    />
     <!-- Twitter Card Protocol -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@d_caldasCaridad" />
     <meta name="twitter:title" content="Mostly Entertainment Record Company" />
-    <meta name="twitter:description" content="Record company dedicated to the production, distribution and promotion of rap music" />
-    <meta name="twitter:image" content="https://github.com/deCaldas/mostly-entertainment/blob/main/img/twitterCard-Mostly_Entertainment.png?raw=true/" />
+    <meta
+      name="twitter:description"
+      content="Record company dedicated to the production, distribution and promotion of rap music"
+    />
+    <meta
+      name="twitter:image"
+      content="https://github.com/deCaldas/mostly-entertainment/blob/main/img/twitterCard-Mostly_Entertainment.png?raw=true/"
+    />
     <title>Mostly Entertainment</title>
     <link rel="icon" type="png" href="favicon-mostly_entertainment.png" />
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles-hero.css">
-    <link rel="stylesheet" href="styles-carousel_artists.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles-hero.css" />
+    <link rel="stylesheet" href="css/styles-carousel_artists.css" />
+  </head>
+  <body>
     <header>
-        <h1>Mostly Entertainment</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#discografica">Discográfica</a></li>
-                <li><a href="#artistas">Artistas</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+      <h1>Mostly Entertainment</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#discografica">Discográfica</a></li>
+          <li><a href="#artistas">Artistas</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main id="hero">
-        <section id="inicio">
-            <div class="hero-texto">
-                <h2>Ten la Bienvenida</h2>
-            </div>
-        </section>
-            
-        <section id="discografica">
-            <div class="hero-texto">
-                <h2>Discografic Company</h2>
-                <img src="img/portada-mostly_entertainment.png" alt="Mostly Entertainment cover">
-                <p>Somos una empresa dedicada a la producción, distribución y promoción de música rap.</p>
-            </div>
-        </section>
-            
-        <section id="artistas">
-            <div class="hero-texto">
-                <h2>Artistas</h2>
-                <div class="container">
-                    <input type="radio" name="slider" id="item-1" checked>
-                    <input type="radio" name="slider" id="item-2">
-                    <input type="radio" name="slider" id="item-3">
-                    <div class="cards">
-                    <label class="card" for="item-1" id="song-1">
-                        <img src="https://pbs.twimg.com/media/GPulafhXUAAwu61?format=jpg&name=small" alt="song">
-                    </label>
-                    <label class="card" for="item-2" id="song-2">
-                        <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80" alt="song">
-                    </label>
-                    <label class="card" for="item-3" id="song-3">
-                        <img src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="song">
-                    </label>
-                    </div>                      
-                </div>
-                <p>Descubre a nuestros talentosos artistas y escucha su música.</p>
-                <a href="https://youtube.com/@AiTe.hipHopArtist?si=Auf1SY62v2xrC07l">AyT - Canal Oficial de YouTube</a>
-            </div>
-        </section>
-            
-        <section id="productos">
-            <div class="hero-texto">
-                <h2>Productos Musicales</h2>
-                <ul>
-                    <!-- En esta sección crear una playlist -->
-                    <li><button><a href="">Descargas digitales</a></button></li>
-                    <!-- Crear una Music Store -->
-                    <li><button><a href="">Merchandising</a></button></li>
-                    <!-- Crear una Merchandise Store -->
-                </ul>
-            </div>
-        </section>
+      <section id="inicio">
+        <div class="hero-texto">
+          <h2>Ten la Bienvenida</h2>
+        </div>
+      </section>
 
-        <hr>
-        
-        <section id="contacto">
-            <div class="hero-texto">
-                <h2>Contáctanos</h2>
-                <p>Quieres colaborar con nosotros... contactanos.</p>
-                <form action="#">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                
-                    <label for="correo">Correo electrónico:</label>
-                    <input type="email" id="correo" name="correo" required>
-                
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" required></textarea>
-                
-                    <button type="submit">Enviar</button>
-                </form>
+      <section id="discografica">
+        <div class="hero-texto">
+          <h2>Discografic Company</h2>
+          <img
+            src="img/portada-mostly_entertainment.png"
+            alt="Mostly Entertainment cover"
+          />
+          <p>
+            Somos una empresa dedicada a la producción, distribución y promoción
+            de música rap.
+          </p>
+        </div>
+      </section>
+
+      <section id="artistas">
+        <div class="hero-texto">
+          <h2>Artistas</h2>
+          <div class="container">
+            <input type="radio" name="slider" id="item-1" checked />
+            <input type="radio" name="slider" id="item-2" />
+            <input type="radio" name="slider" id="item-3" />
+            <div class="cards">
+              <label class="card" for="item-1" id="song-1">
+                <img
+                  src="https://pbs.twimg.com/media/GPulafhXUAAwu61?format=jpg&name=small"
+                  alt="song"
+                />
+              </label>
+              <label class="card" for="item-2" id="song-2">
+                <img
+                  src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
+                  alt="song"
+                />
+              </label>
+              <label class="card" for="item-3" id="song-3">
+                <img
+                  src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+                  alt="song"
+                />
+              </label>
             </div>
-        </section>
+          </div>
+          <p>Descubre a nuestros talentosos artistas y escucha su música.</p>
+          <a href="https://youtube.com/@AiTe.hipHopArtist?si=Auf1SY62v2xrC07l">
+            AiTe de Caldas Caridad - Canal Oficial de YouTube
+          </a>
+        </div>
+      </section>
+
+      <section id="productos">
+        <div class="hero-texto">
+          <h2>Productos Musicales</h2>
+          <!--      
+          <ul> 
+          -->
+          <!-- En esta sección crear una playlist -->
+          <!--             
+          <li>
+            <button><a href="">Descargas digitales</a></button>
+          </li> 
+          -->
+          <!-- Crear una Music Store -->
+          <!--             
+          <li>
+            <button><a href="">Merchandising</a></button>
+          </li> 
+          -->
+          <!-- Crear una Merchandise Store -->
+          <!-- 
+          </ul> 
+          -->
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="contacto">
+        <div class="hero-texto">
+          <h2>Contáctanos</h2>
+          <p>Quieres colaborar con nosotros... contactanos.</p>
+          <form action="#">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required />
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
     </main>
     <script src="scripts-carousel_artists.js"></script>
-    
+
     <footer>
-        <p>&copy; 2024 Mostly Entertainment</p>
-        <a href="https://www.freepik.es/vector-gratis/fondo-escritorio-moderno-vector-diseno-azul-geometrico_18220884.htm#query=fondos%20para%20paginas%20web&position=1&from_view=keyword&track=ais&uuid=59b9ec7d-fb6b-4955-a736-40b1e8a084e8">Imagen de rawpixel.com</a> en Freepik
+      <p>&copy; 2024 Mostly Entertainment</p>
+      <a
+        href="https://www.freepik.es/vector-gratis/fondo-escritorio-moderno-vector-diseno-azul-geometrico_18220884.htm#query=fondos%20para%20paginas%20web&position=1&from_view=keyword&track=ais&uuid=59b9ec7d-fb6b-4955-a736-40b1e8a084e8"
+        >Imagen de rawpixel.com</a
+      >
+      en Freepik
     </footer>
-</body>
+  </body>
 </html>
