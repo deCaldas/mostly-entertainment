@@ -46,7 +46,7 @@ a {
 
 main {
     padding: 2px 2px 200px 2px;
-    background-image: url("img/v1016-b-09.jpg");
+    background-color: black;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
