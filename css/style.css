@@ -48,7 +48,7 @@ main {
     padding: 2px 2px 200px 2px;
     background-color: black;
     background-image: url(../img/background-mostly_entertainment.png);
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
     background-position: center;
 }
