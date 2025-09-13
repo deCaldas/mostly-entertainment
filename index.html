@@ -45,9 +45,10 @@
       <nav>
         <ul>
           <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#discografica">Discográfica</a></li>
           <li><a href="#artistas">Artista</a></li>
-          <!--      
+          <li><a href="#audio-reproductor">MusicPlayer</a></li>
+          <!-- 
+          <li><a href="#discografica">Discográfica</a></li>     
           <li><a href="#productos">Productos</a></li>
           <li><a href="#contacto">Contacto</a></li> 
           -->
@@ -57,28 +58,28 @@
 
     <main id="hero">
       <section id="inicio">
-        <div class="hero-texto">
-          <h2>Ten la Bienvenida</h2>
+        <div>
+          <h2 class="hero-title">Ten la Bienvenida</h2>
         </div>
       </section>
 
       <section id="discografica">
-        <div class="hero-texto">
+        <div>
           <h2>Discografic Company</h2>
           <img
             class="cover"
             src="./img/portada-mostly_entertainment.png"
             alt="Mostly Entertainment cover"
           />
-          <p>
-            Somos una empresa dedicada a la producción, distribución y promoción
+          <p class="hero-texto">
+            Empresa dedicada a la producción, distribución y promoción
             de música rap.
           </p>
         </div>
       </section>
 
       <section id="artistas">
-        <div class="hero-texto">
+        <div>
           <h2>Hip Hop Artista</h2>
           <div class="container">
             <input type="radio" name="slider" id="item-1" checked />
@@ -102,8 +103,10 @@
               </label>
             </div>
           </div>
-          <p>Descubre a nuestro talentoso artista y escucha su música.</p>
+          <p  class="hero-texto">Descubre a nuestro talentoso artista y escucha su música.</p>
 
+          <!-- Botón a un playlist de YouTube -->
+          <!--
           <a
             href="https://youtube.com/playlist?list=PLoMDuugT1oH0xkw1RayrF5eWkcZMLq3x8&si=GRX6HrpxVBAeiO8w"
             target="_blank"
@@ -111,13 +114,66 @@
               <i class="fa-brands fa-youtube"></i>
               AiTe de Caldas Caridad - Canal Oficial de YouTube
             </button>
-          </a>
+          </a> -->
         </div>
       </section>
 
+      <section id="audio-reproductor">
+            <h3>MusicPlayer</h3>
+            <p  class="hero-texto">Disfruta y descarga tu música</p>
+        <section class="song-info">
+            <img src="./img/logoDorado_fondoNegro_aite.png" alt="Portada del álbum" class="album-cover">
+            <h2 class="song-title">Amanecer en la Oscuridad</h2>
+            <p class="song-age">2001</p>
+        </section>
+
+        <section class="player">
+            <!-- Reproductor de audio nativo -->
+            <audio id="audio-player" class="audio-player" controls>
+                <source src="./produccionmusical/AmanecerEnLaOscuridad.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+
+            <!-- Controles personalizados -->
+           <!--  <div class="custom-controls">
+                <button class="control-btn" id="rewind">
+                    <i class="fas fa-backward"></i>
+                </button>
+                <button class="control-btn play-pause" id="play-pause">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="control-btn" id="forward">
+                    <i class="fas fa-forward"></i>
+                </button>
+            </div> -->
+        </section>
+
+        <!-- Botón de Descarga -->
+        <!-- <section class="actions">
+            <button class="btn btn-download" id="download-btn">
+                <i class="fas fa-download"></i> Descargar Canción
+            </button>
+            <button class="btn btn-share" id="share-btn">
+                <i class="fas fa-share-alt"></i> Compartir
+            </button>
+        </section> -->
+
+        <section class="formats">
+            <h3>Formatos Disponibles</h3>
+            <div class="format-badges">
+                <span class="badge">MP3</span>
+                <span class="badge">MP4</span>
+                <span class="badge">WAV</span>
+                <span class="badge">OGG</span>
+            </div>
+        </section>
+    </div>
+  </section> <!-- hasta aquí el audio-reproductor -->
+
+
       <!--  
       <section id="productos">
-        <div class="hero-texto">
+        <div>
           <h2>Productos Musicales</h2>
 
           <ul>
@@ -141,9 +197,9 @@
       <hr />
 
       <section id="contacto">
-        <div class="hero-texto">
+        <div>
           <h2>Contáctanos</h2>
-          <p>Quieres colaborar con nosotros... contactanos.</p>
+          <p  class="hero-texto">Quieres colaborar con nosotros... contactanos.</p>
           <form action="#">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required />
@@ -160,10 +216,11 @@
       </section>
        -->
     </main>
-    <script src="scripts-carousel_artists.js"></script>
+
+    <script src="./js/index.js"></script>
 
     <footer>
-      <p>
+      <p class="hero-texto">
         <a href="https://deCaldas.github.io/home/" target="_blank">
           Landing page by De Caldas - Copyright &copy; 2024 Mostly Entertainment
         </a>
