@@ -377,9 +377,10 @@ color: var(--color-text);
   backdrop-filter: blur(10px);
 }
 
+/* Contenedor para alineación interna si es necesaria */
+/* 
 .player-section__container {
-  /* Contenedor para alineación interna si es necesaria */
-}
+} */
 
 .player-section__heading {
   text-align: center;
