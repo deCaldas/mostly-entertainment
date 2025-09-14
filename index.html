@@ -5,226 +5,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Record company dedicated to the production, distribution and promotion of rap music"
+      content="Compañía discográfica especializada en la producción, distribución y promoción de música rap y hip hop."
     />
+    
     <!-- Open Graph protocol -->
-    <meta property="og:title" content="Mostly Entertainment Record Company" />
-    <meta property="og:type" content="Homepage" />
+    <meta property="og:title" content="Mostly Entertainment - Discográfica de Rap" />
+    <meta property="og:type" content="website" />
     <meta
       property="og:url"
       content="https://decaldas.github.io/mostly-entertainment/"
     />
     <meta
       property="og:image"
-      content="https://github.com/deCaldas/mostly-entertainment/blob/main/img/openGraph-Mostly_Entertainment.png?raw=true/"
+      content="https://github.com/deCaldas/mostly-entertainment/blob/main/img/openGraph-Mostly_Entertainment.png?raw=true"
     />
+    <meta
+      property="og:description"
+      content="Compañía discográfica especializada en la producción, distribución y promoción de música rap y hip hop."
+    />
+    
     <!-- Twitter Card Protocol -->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@d_caldasCaridad" />
     <meta name="twitter:title" content="Mostly Entertainment Record Company" />
     <meta
       name="twitter:description"
-      content="Record company dedicated to the production, distribution and promotion of rap music"
+      content="Compañía discográfica especializada en la producción, distribución y promoción de música rap y hip hop."
     />
     <meta
       name="twitter:image"
-      content="https://github.com/deCaldas/mostly-entertainment/blob/main/img/twitterCard-Mostly_Entertainment.png?raw=true/"
+      content="https://github.com/deCaldas/mostly-entertainment/blob/main/img/twitterCard-Mostly_Entertainment.png?raw=true"
     />
-    <title>Mostly Entertainment</title>
-    <link rel="icon" type="png" href="./img/favicon-mostly_entertainment.png" />
+    
+    <title>Mostly Entertainment - Discográfica de Rap y Hip Hop</title>
+    
+    <!-- Favicon moderno -->
+    <link rel="icon" href="./img/favicon-mostly_entertainment.png" />
+    <link rel="apple-touch-icon" href="./img/favicon-mostly_entertainment.png">
+    
+    <!-- Hojas de estilo -->
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/styles-carousel_artists.css" />
+    
+    <!-- Iconos -->
     <script
       src="https://kit.fontawesome.com/a2dc166a48.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <header>
-      <h1>Mostly Entertainment</h1>
-      <nav>
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#artistas">Artista</a></li>
-          <li><a href="#audio-reproductor">MusicPlayer</a></li>
-          <!-- 
-          <li><a href="#discografica">Discográfica</a></li>     
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#contacto">Contacto</a></li> 
-          -->
-        </ul>
-      </nav>
+  
+  <body class="app">
+    <header class="header" role="banner">
+      <div class="header__container">
+        <h1><a class="header__title" href="#inicio">Mostly Entertainment</a></h1>
+        <nav class="nav" role="navigation" aria-label="Navegación principal">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#artistas">Artistas</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#reproductor">Reproductor</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main id="hero">
-      <section id="inicio">
-        <div>
-          <h2 class="hero-title">Ten la Bienvenida</h2>
+    <main class="main" role="main">
+      <section class="hero" id="inicio" aria-labelledby="inicio-heading">
+        <div class="hero__banner">
+          <h2 id="inicio-heading" class="hero__title">Ten la Bienvenida</h2>
+          <p class="hero__text">Tu destino para la mejor música rap y hip hop</p>
         </div>
       </section>
 
-      <section id="discografica">
-        <div>
-          <h2>Discografic Company</h2>
-          <img
-            class="cover"
-            src="./img/portada-mostly_entertainment.png"
-            alt="Mostly Entertainment cover"
+      <section id="discografica" class="company" aria-labelledby="discografica-heading">
+  <div class="company__container">
+    <h2 id="discografica-heading" class="company__heading">Nuestra Discográfica</h2>
+    <figure class="company__figure">
+      <img
+        class="company__cover"
+        src="./img/portada-mostly_entertainment.png"
+        alt="Logo de Mostly Entertainment - Compañía discográfica"
+      />
+      <figcaption class="company__caption">Mostly Entertainment - Produciendo talento desde sus inicios</figcaption>
+    </figure>
+    <p class="company__description">
+      Empresa dedicada a la producción, distribución y promoción
+      de música rap, comprometida con el desarrollo de artistas emergentes.
+    </p>
+  </div>
+</section>
+
+      <section id="artistas" class="artists" aria-labelledby="artistas-heading">
+  <div class="artists__container">
+    <h2 id="artistas-heading" class="artists__heading">Nuestros Artistas de Hip Hop</h2>
+
+    <div class="carousel" role="region" aria-label="Galería de artistas">
+      <input class="carousel__input" type="radio" name="slider" id="item-1" checked aria-label="Artista 1" />
+      <input class="carousel__input" type="radio" name="slider" id="item-2" aria-label="Artista 2" />
+      <input class="carousel__input" type="radio" name="slider" id="item-3" aria-label="Artista 3" />
+      
+      <div class="carousel__cards">
+        <label class="carousel__card" for="item-1" id="song-1">
+          <img 
+            class="carousel__image"
+            src="https://pbs.twimg.com/media/GPulafhXUAAwu61?format=jpg&name=small"
+            alt="Artista de Mostly Entertainment en concierto"
           />
-          <p class="hero-texto">
-            Empresa dedicada a la producción, distribución y promoción
-            de música rap.
-          </p>
-        </div>
-      </section>
-
-      <section id="artistas">
-        <div>
-          <h2>Hip Hop Artista</h2>
-          <div class="container">
-            <input type="radio" name="slider" id="item-1" checked />
-            <input type="radio" name="slider" id="item-2" />
-            <input type="radio" name="slider" id="item-3" />
-            <div class="cards">
-              <label class="card" for="item-1" id="song-1">
-                <img
-                  src="https://pbs.twimg.com/media/GPulafhXUAAwu61?format=jpg&name=small"
-                  alt="song"
-                />
-              </label>
-              <label class="card" for="item-2" id="song-2">
-                <img
-                  src="img/sentadoFrenteFueraDeLaCapillaSanGabriel.jpg"
-                  alt="song"
-                />
-              </label>
-              <label class="card" for="item-3" id="song-3">
-                <img src="img/sonrienteFrenteLaAvenida.jpg" alt="song" />
-              </label>
-            </div>
-          </div>
-          <p  class="hero-texto">Descubre a nuestro talentoso artista y escucha su música.</p>
-
-          <!-- Botón a un playlist de YouTube -->
-          <!--
-          <a
-            href="https://youtube.com/playlist?list=PLoMDuugT1oH0xkw1RayrF5eWkcZMLq3x8&si=GRX6HrpxVBAeiO8w"
-            target="_blank"
-            ><button>
-              <i class="fa-brands fa-youtube"></i>
-              AiTe de Caldas Caridad - Canal Oficial de YouTube
-            </button>
-          </a> -->
-        </div>
-      </section>
-
-      <section id="audio-reproductor">
-            <h3>MusicPlayer</h3>
-            <p  class="hero-texto">Disfruta y descarga tu música</p>
-        <section class="song-info">
-            <img src="./img/logoDorado_fondoNegro_aite.png" alt="Portada del álbum" class="album-cover">
-            <h2 class="song-title">Amanecer en la Oscuridad</h2>
-            <p class="song-age">2001</p>
-        </section>
-
-        <section class="player">
-            <!-- Reproductor de audio nativo -->
-            <audio id="audio-player" class="audio-player" controls>
-                <source src="./produccionmusical/AmanecerEnLaOscuridad.mp3" type="audio/mp3">
-                Tu navegador no soporta el elemento de audio.
-            </audio>
-
-            <!-- Controles personalizados -->
-           <!--  <div class="custom-controls">
-                <button class="control-btn" id="rewind">
-                    <i class="fas fa-backward"></i>
-                </button>
-                <button class="control-btn play-pause" id="play-pause">
-                    <i class="fas fa-play"></i>
-                </button>
-                <button class="control-btn" id="forward">
-                    <i class="fas fa-forward"></i>
-                </button>
-            </div> -->
-        </section>
-
-        <!-- Botón de Descarga -->
-        <!-- <section class="actions">
-            <button class="btn btn-download" id="download-btn">
-                <i class="fas fa-download"></i> Descargar Canción
-            </button>
-            <button class="btn btn-share" id="share-btn">
-                <i class="fas fa-share-alt"></i> Compartir
-            </button>
-        </section> -->
-
-        <section class="formats">
-            <h3>Formatos Disponibles</h3>
-            <div class="format-badges">
-                <span class="badge">MP3</span>
-                <span class="badge">MP4</span>
-                <span class="badge">WAV</span>
-                <span class="badge">OGG</span>
-            </div>
-        </section>
+        </label>
+        <label class="carousel__card" for="item-2" id="song-2">
+          <img
+            class="carousel__image"
+            src="img/sentadoFrenteFueraDeLaCapillaSanGabriel.jpg"
+            alt="Artista de Mostly Entertainment en locación histórica"
+          />
+        </label>
+        <label class="carousel__card" for="item-3" id="song-3">
+          <img 
+            class="carousel__image"
+            src="img/sonrienteFrenteLaAvenida.jpg" 
+            alt="Artista de Mostly Entertainment en estudio" 
+          />
+        </label>
+      </div>
     </div>
-  </section> <!-- hasta aquí el audio-reproductor -->
+    
+    <p class="artists__description">Descubre a nuestro talentoso artista y escucha su música.</p>
+  </div>
+</section>
 
+      <section id="reproductor" class="player-section" aria-labelledby="reproductor-heading">
+  <div class="player-section__container">
+    <h2 id="reproductor-heading" class="player-section__heading">Reproductor Musical</h2>
+    <p class="player-section__description">Disfruta y descarga tu música favorita</p>
+    
+    <article class="player-section__song-info" aria-labelledby="song-title">
+      <img 
+        src="./img/logoDorado_fondoNegro_aite.png" 
+        alt="Portada del álbum Amanecer en la Oscuridad" 
+        class="player-section__album-cover"
+      />
+      <div class="player-section__song-details">
+        <h3 id="song-title" class="player-section__song-title">Amanecer en la Oscuridad</h3>
+        <p class="player-section__song-year">2001</p>
+      </div>
+    </article>
 
-      <!--  
-      <section id="productos">
-        <div>
-          <h2>Productos Musicales</h2>
+    <div class="player-section__audio-player" role="region" aria-label="Reproductor de audio">
+      <audio id="audio-player" class="player-section__audio" controls>
+        <source src="./produccionmusical/AmanecerEnLaOscuridad.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+    </div>
 
-          <ul>
-            En esta sección crear una playlist
+    <aside class="player-section__formats" aria-labelledby="formats-heading">
+      <h3 id="formats-heading" class="player-section__formats-title">Formatos Disponibles</h3>
+      <div class="player-section__format-badges">
+        <span class="player-section__badge" aria-label="Formato MP3">MP3</span>
+        <span class="player-section__badge" aria-label="Formato MP4">MP4</span>
+        <span class="player-section__badge" aria-label="Formato WAV">WAV</span>
+        <span class="player-section__badge" aria-label="Formato OGG">OGG</span>
+      </div>
+    </aside>
+  </div>
+</section>
 
-            <li>
-              <button><a href="">Descargas digitales</a></button>
-            </li>
-
-            Crear una Music Store
-
-            <li>
-              <button><a href="">Merchandising</a></button>
-            </li>
-
-            Crear una Merchandise Store
-          </ul>
-        </div>
-      </section>
-
-      <hr />
-
-      <section id="contacto">
-        <div>
-          <h2>Contáctanos</h2>
-          <p  class="hero-texto">Quieres colaborar con nosotros... contactanos.</p>
-          <form action="#">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required />
-
-            <label for="correo">Correo electrónico:</label>
-            <input type="email" id="correo" name="correo" required />
-
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-
-            <button type="submit">Enviar</button>
-          </form>
-        </div>
-      </section>
-       -->
     </main>
 
-    <script src="./js/index.js"></script>
-
-    <footer>
-      <p class="hero-texto">
-        <a href="https://deCaldas.github.io/home/" target="_blank">
-          Landing page by De Caldas - Copyright &copy; 2024 Mostly Entertainment
-        </a>
-      </p>
+    <footer role="contentinfo">
+      <div class="footer-content">
+        <p class="copyright">
+          <a class="footer__link" href="https://deCaldas.github.io/home/" target="_blank" rel="noopener">
+            Landing page by De Caldas - Copyright &copy; 2024 Mostly Entertainment
+          </a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>
